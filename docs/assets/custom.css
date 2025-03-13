@@ -1,0 +1,81 @@
+/* ------------------------------------- */
+/* 🌟 Global Styles */
+/* ------------------------------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------------- */
+/* 🌟 Sidebar Navigation Styles */
+/* ------------------------------------- */
+.md-sidebar {
+    background-color: #2C3E50; /* Dark blue sidebar */
+}
+
+.md-nav__link {
+    color: #ECF0F1 !important; /* Light text for sidebar links */
+}
+
+.md-nav__link:hover {
+    color: #FF9800 !important; /* Orange hover effect */
+}
+
+/* ------------------------------------- */
+/* 🌟 Main Content Area */
+/* ------------------------------------- */
+.md-content {
+    background-color: #F8F9FA; /* Light background for main content */
+    padding: 20px;
+}
+
+/* ------------------------------------- */
+/* 🌟 Code Block Styling */
+/* ------------------------------------- */
+.md-typeset pre {
+    background-color: #272822; /* Dark theme for code blocks */
+    color: #F8F8F2;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.md-typeset code {
+    background-color: #EEE;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* ------------------------------------- */
+/* 🌟 Table of Contents Panel */
+/* ------------------------------------- */
+.md-sidebar--secondary {
+    background-color: #ECEFF1; /* Light gray for TOC background */
+}
+
+/* ------------------------------------- */
+/* 🌟 Custom Buttons */
+/* ------------------------------------- */
+.md-button {
+    background-color: #3498DB !important; /* Blue button */
+    color: #FFF !important;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.md-button:hover {
+    background-color: #2980B9 !important; /* Darker blue on hover */
+}
+
+/* ------------------------------------- */
+/* 🌟 Footer Customization */
+/* ------------------------------------- */
+.md-footer {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.md-footer a {
+    color: #FF9800 !important;
+}

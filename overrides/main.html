@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{ base_url }}/assets/css/custom.css">
+{% endblock %}
+
+{% block site_nav %}
+<nav class="md-nav md-nav--primary" aria-label="Primary Navigation">
+    <ul class="md-nav__list">
+        {% for nav_item in nav.items %}
+            <li class="md-nav__item">
+                <a href="{{ nav_item.url }}" class="md-nav__link">
+                    <i class="fa fa-folder"></i> {{ nav_item.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
+{% endblock %}
+
+{% block content %}
+<main class="md-main">
+    <div class="md-main__inner">
+        <div class="md-sidebar md-sidebar--primary">
+            {{ super() }}
+        </div>
+        <div class="md-content">
+            {{ page.content }}
+        </div>
+        <div class="md-sidebar md-sidebar--secondary">
+            {{ toc }}
+        </div>
+    </div>
+</main>
+{% endblock %}

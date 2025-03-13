@@ -1,0 +1,125 @@
+site_name: DevCraft
+site_url: https://blutterfly.github.io/devcraft/
+site_author: Larry Prestosa
+site_description: "A handbook for DevCraft - covering Python, Pandas, Databases, and more."
+
+repo_name: blutterfly/devcraft
+repo_url: https://github.com/blutterfly/devcraft
+
+# Theme Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+# # Navigation Structure
+# nav:
+#   - Home: index.md
+#   - Python:
+#       - Overview: python/index.md
+#       - Basics: python/basics.md
+#       - Advanced: python/advanced.md
+#   - Pandas:
+#       - Overview: pandas/index.md
+#       - DataFrames: pandas/dataframes.md
+#       - Analysis: pandas/analysis.md
+#   - Databases:
+#       - SQL Basics: databases/sql_basics.md
+#       - DuckDB: databases/duckdb.md
+#       - NoSQL: databases/nosql.md
+#   - PDF Utils:
+#       - Working with PDFs: pdf-utils/index.md
+#   - Web Scraping:
+#       - Basics: webscraping/basics.md
+#       - Advanced: webscraping/advanced.md
+#   - GUI Dev:
+#       - PyQt6: gui-dev/pyqt6.md
+#   - Web Dev:
+#       - Flask: web-dev/flask.md
+#       - Django: web-dev/django.md
+#   - TUI Dev:
+#       - Rich: tui-dev/rich.md
+#       - Textual: tui-dev/textual.md
+#   - Linux:
+#       - Basics: linux/basics.md
+#       - Advanced: linux/advanced.md
+#   - How-To:
+#       - Guides: how-to/index.md
+#   - Best Practices:
+#       - Code Style: best-practices/code-style.md
+#       - Performance: best-practices/performance.md
+#   - About: about.md
+#   - Contact: contact.md
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - macros
+  - social
+  - blog
+  - glightbox
+  - tags
+  - awesome-pages
+
+# Markdown Extensions
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Extra JavaScript and CSS
+extra_css:
+  - stylesheets/extra.css
+  - assets/css/custom/css
+
+extra_javascript:
+  - scripts/extra.js
+
+# Extra Settings
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/blutterfly
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/your_handle
+  analytics:
+    provider: google
+    property: UA-XXXXXXXXX-X

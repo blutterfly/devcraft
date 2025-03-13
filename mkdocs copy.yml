@@ -1,0 +1,51 @@
+site_name: DevCraft
+site_url: https://blutterfly.github.io/devcraft/
+repo_url: https://github.com/blutterfly/DevCraft
+repo_name: blutterfly/DevCraft
+edit_uri: edit/main/docs/
+
+# Theme Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+  palette:
+    scheme: default
+  icon:
+    repo: fontawesome/brands/github
+  include_search_page: false
+  search_index_only: true
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  - Python: python.md
+  - Pandas: pandas.md
+  - Data Science: data_science.md
+  - Databases: databases.md
+  - PDF Utils: pdf_utils.md
+  - Web Scraping: web_scraping.md
+  - GUI Dev: gui_dev.md
+  - Web Dev: web_dev.md
+  - TUI Dev: tui_dev.md
+  - Linux: linux.md
+  - How-To: how_to.md
+  - Best Practices: best_practices.md
+  - About: about.md
+  - Contact Us: contact.md
+
+# Plugins
+plugins:
+  - search
+  - awesome-pages
+
+# Extra Configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/blutterfly
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/larry-prestosa
